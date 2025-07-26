@@ -200,12 +200,15 @@
   align-items: flex-start;
   margin: 210px auto 0 auto ;
   position: relative;
+  
 }
 
 .plants-lover-container {
   width: 540px;
   height: 597px;
+  height: auto;
   position: relative;
+  margin-top: 40px;
 }
 
 .flower-store-img {
@@ -227,7 +230,9 @@
   flex: 1;
   max-width: 540px;
   max-height: 521px;
-  margin-top: 38px;
+  padding: 0 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .plants-title {
@@ -235,14 +240,13 @@
   line-height: 1.2;
   font-weight: bold;
   color: #1f1f1f;
-  margin-bottom: 24px;
   font-family: 'Noto Serif', serif;
 }
 
 .plants-list-contant {
   padding: 0;
   margin: 0;
-  gap: 60px;
+  gap: 10px;
 }
 
 .list-item {
@@ -255,7 +259,197 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* responsive media */
+/* latest deal style */
+
+.latest-deals-title{
+  width: 1440px;
+  height: 138px;
+  text-align: center;
+  margin: 0 auto;
+}
+.latest-heading{ font-weight: bold;
+  margin-top: 138px;
+font-size:xx-large}
+
+.latest-deals-container{
+width: 1140px;
+ height: 459px;
+ display: flex;
+ margin: 0 auto;
+ gap: 28px;
+ justify-content: center;
+ text-align: center;
+}
+.deals-container{
+  position: relative;
+ display: flex;
+  flex-direction: column;
+  gap: 25px; 
+}
+.deals-container img{
+  display: block;
+  border-radius: 14px;
+  width: 367px;
+  height: 201px;
+  gap: 20px;
+}
+ 
+.deals-container,
+.right-deal {
+  position: relative;
+}
+
+
+.first-img,
+.second-img,
+.third-img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+/* Wrapper for 1st image text */
+.deals-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+/* Wrapper for 2nd image text */
+.deals-text-two {
+  position: absolute;
+  top: 68%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.right-deal {
+  position: relative;
+}
+
+.right-deal .img-text,
+.right-deal .img-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.right-deal .img-text {
+  top: 40%;
+}
+
+.right-deal .img-btn {
+  top: 55%;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Common button style */
+.img-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+
+/* colourful bunch style */
+.colorfull-bunch-section {
+  position: relative;
+  width: 1440px;
+  height: 533px;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'Noto Serif', serif;
+}
+
+.colorfull-bunch-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.bunch-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 830px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+}
+
+.bunch-title {
+  font-size: 48px;
+  font-weight: bold;
+  transform: rotate(-1deg);
+  margin: 0;
+}
+
+/* Form styles */
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 830px;
+  justify-content: center;
+}
+
+.email-input {
+  width: 644px;
+  flex: 1;
+  padding: 15px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.subscribe-btn {
+  width: 186px;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  cursor: pointer;
+ box-sizing: border-box;
+}
+
+/* footer icon style */
+
+
+
+
+/* responsive media */ 
+
 @media screen and (max-width:400px){
     .navber{width: 361px;
         height: 38px;
@@ -330,22 +524,25 @@
 
   /* plants lover section */
   .plants-lover-section {
-    flex-direction: column;
-    width: 100%;
-    max-width: 361px;
-    height: 641px;
+    flex-direction: column; 
+     width: 100%;
+    max-width: 350px;
+    height: auto;
     margin: 0 auto;
-    padding: 0;
-    align-items: center;
+    padding: 0 ;
+  
+    
   }
-  .plants-lover-container {
-    width: 358px;
+  .plants-lover-container { width: 100%;
+    max-width: 358px;
     height: 396px;
     margin-top: 60px; 
+    margin-top: 40px;
   }
-  .flower-store-img {
-    width: 358px;
+  .flower-store-img {width: 100%;
+    max-width: 358px;
     height: 396px;
+    height: auto;
     object-fit: cover;
     display: block;
   }
@@ -353,29 +550,94 @@
     display: none;
   }
   .plants-content {
-    width: 361px;
+    width: 350px;
     height: 234px;
     margin: 0;
+    margin-top: 20px;
     padding: 0 ;
   }
 
   .plants-title {
     font-size: 24px;
     margin-bottom: 10px;
+   
   }
 
   .list-item {
     font-size: 14px;
     line-height: 1.6;
     word-wrap: break-word;
-    margin: 0;
+    margin:15px 15px;
+   
+  }
+/* lates deal section */
+
+  .latest-deals-title {
+    width: 100%;
+    padding: 0 16px;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .latest-deals-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .deals-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  .deals-container img,
+  .right-deal img {
+    width: 361px;
+    height: 185px;
+    border-radius: 14px;
+  }
+
+  .deals-text {
+    top: 22%;
+  }
+
+  .deals-text-two {
+    top: 72%;
+  }
+
+  .right-deal {
+    width: 361px;
+    height: 185px;
+    margin: 0 auto;
+  }
+
+  .right-deal .img-text {
+    top: 40%;
+    font-size: 20px;
+  }
+
+  .right-deal .img-btn {
+    top: 60%;
+    font-size: 14px;
+  }
+
+  .img-btn {
+    font-size: 14px;
+  }
+
+  .img-text {
+    font-size: 18px;
   }
 }
 
-
-
-
-
+ /* colourful bonus section */
+.colorfull-bunch-section{max-width: 100%;}
+  
 
  
   
