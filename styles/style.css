@@ -446,6 +446,71 @@ width: 1140px;
 /* footer icon style */
 
 
+.footer {
+  width: 1440px;
+  height: 348px;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+
+.footer-container {
+  width: 1120px;
+  height: 248px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Logo + description */
+.footer-logo-box {
+  width: 359px;
+  height: 179px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faugel-logo {
+  width: 110px;
+  height: 68px;
+  object-fit: contain;
+}
+
+.footer-description {
+  width: 359px;
+  height: 81px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer link columns */
+.footer-column {
+  width: 85px;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.footer-socials img {
+  width: 36px;
+  height: 36px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
 
 
 /* responsive media */ 
@@ -633,10 +698,74 @@ width: 1140px;
   .img-text {
     font-size: 18px;
   }
+/* colourful bonus section */
+.colorfull-bunch-section{max-width: 100%;}
+
+
+/* footer section */
+  .footer {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-logo-box {
+    text-align: left;  /* left aligned */
+  }
+
+  .footer-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-bottom: 12px; /* logo নিচে কিছু space */
+  }
+
+  .footer-text {
+  color: #333333 !important;   /* গাঢ় কালার */
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  text-align: left !important;
+  background-color: transparent !important;
 }
 
- /* colourful bonus section */
-.colorfull-bunch-section{max-width: 100%;}
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .footer-logos img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+}
+
   
 
  
